@@ -1,0 +1,69 @@
+.footer {
+  background: #454545;
+  text-align: center;
+}
+
+.subsec1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.footer h4 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: alata;
+  letter-spacing: 0.2rem;
+  font-size: 1.1rem;
+}
+
+.bs1 {
+  color: gainsboro;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.bs1:hover {
+  color: gray;
+}
+
+.bs2 {
+  color: gainsboro;
+  font-size: 2.5rem;
+  margin-left: 4rem;
+  cursor: pointer;
+}
+
+.bs2:hover {
+  color: gray;
+}
+
+.bs3 {
+  color: gainsboro;
+  font-size: 2.5rem;
+  cursor: pointer;
+  margin-left: 4rem;
+}
+
+.bs3:hover {
+  color: gray;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 610px) {
+  .footer h4 {
+    font-size: 0.95rem;
+  }
+  .bs1 {
+    font-size: 2rem;
+  }
+  .bs2 {
+    font-size: 2rem;
+  }
+  .bs3 {
+    font-size: 2rem;
+  }
+}

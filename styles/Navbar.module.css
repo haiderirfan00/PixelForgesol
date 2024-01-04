@@ -1,0 +1,125 @@
+.logo img {
+  height: 7rem;
+}
+
+.menu {
+  display: flex;
+  margin-left: 10rem;
+}
+
+.menu li {
+  padding-left: 4rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  font-size: 1.9rem;
+  text-transform: capitalize;
+  font-family: poppins;
+}
+
+.menu li:hover {
+  color: turquoise;
+}
+
+.contactbtn {
+  margin-left: 9rem;
+  height: 5rem;
+  width: 15rem;
+  border-radius: 2rem;
+  border: none;
+  background: #2dc7c0;
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-family: alata;
+  cursor: pointer;
+  transition: 0.15s all;
+}
+
+.contactbtn:hover {
+  background: #3e949a;
+}
+
+.openmenu,
+.closemenu {
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.openmenu {
+  top: 50%;
+  right: 2rem;
+  transform: translateY(-50%);
+}
+
+.closemenu {
+  top: 2rem;
+  right: 2rem;
+  color: #fff;
+}
+
+#check {
+  display: none;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 610px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background: #000;
+    transition: 0.2s all ease-in-out;
+  }
+
+  .openmenu,
+  .closemenu {
+    display: block;
+  }
+
+  #check:checked ~ .menu {
+    right: 0;
+  }
+
+  #check:checked ~ .openmenu{
+    display: none;
+  }
+
+  .contactbtn {
+    display: none;
+  }
+
+  .close {
+    color: #fff;
+    font-size: 4rem;
+    margin-top: 1rem;
+  }
+
+  .open {
+    color: #fff;
+    font-size: 4rem;
+  }
+
+  .menu li{
+    margin-top: 5rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: alata;
+    margin-left: 0rem;
+  }
+}
